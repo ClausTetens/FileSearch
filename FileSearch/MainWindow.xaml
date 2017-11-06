@@ -1,0 +1,21 @@
+﻿<Window x:Name="MyWindow" x:Class="FileSearch.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FileSearch"
+        mc:Ignorable="d"
+        Title="FileSearch" Height="480.549" Width="1141.706">
+    <Grid x:Name="MyGrid" RenderTransformOrigin="0.485,0.544" Margin="0,0,2,0">
+        <TextBox x:Name="filesFound" HorizontalAlignment="Left" Margin="5,145,0,0" TextWrapping="Wrap" AcceptsReturn="True" Width="633" />
+        <TextBox x:Name="searchForFile" HorizontalAlignment="Left" Height="23" Margin="104,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="237"/>
+        <TextBox x:Name="searchForText" HorizontalAlignment="Left" Height="23" Margin="104,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="237"/>
+        <Label x:Name="label" Content="Filename" HorizontalAlignment="Left" Margin="20,23,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy" Content="Content" HorizontalAlignment="Left" Margin="20,59,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="button" Content="Go get it" HorizontalAlignment="Left" Margin="104,102,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
+        <TreeView x:Name="folders" HorizontalAlignment="Left" Margin="654,23,0,0" Loaded="folders_Loaded" VerticalAlignment="Top" Width="468"/>
+        <GridSplitter x:Name="gridSplitter" HorizontalAlignment="Left" Margin="642,10,0,10" Width="7" MouseMove="gridSplitter_MouseMove" PreviewMouseUp="gridSplitter_PreviewMouseUp"/>
+        <Label x:Name="label1" Content="Label" HorizontalAlignment="Left" Margin="458,59,0,0" VerticalAlignment="Top" Width="133"/>
+
+    </Grid>
+</Window>
